@@ -1,0 +1,36 @@
+{%extends 'app_uno/base.html'%}
+{%block body_block%}
+
+
+<div class="d-flex justify-content-center align-items-center container ">
+
+    <div class="row ">
+
+    <form action="{%url 'app_uno:user_login'%}"  method="POST">
+      {%csrf_token%}
+      <div class="mb-3">
+        <p>
+          <label for="username" class="form-label">Usuario</label>
+          <input type="text" class="form-control" name="username" placeholder="Usuario">
+        </p>
+     </div>
+     <div class="mb-3">
+        <p>
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" name="password" placeholder="Contraseña">
+        </p>
+     </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+{%endblock%}

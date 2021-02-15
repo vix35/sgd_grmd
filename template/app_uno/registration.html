@@ -1,0 +1,23 @@
+{%extends 'app_uno/base.html'%}
+{% load static %}
+
+{%block body_block%}
+
+<div class="d-flex justify-content-center align-items-center container ">
+  <div class="row ">
+    <div class="container">
+      {%if registered%}
+        <h1>Ha sido registrado correctamente</h1>
+      {%else%}
+        <p>Ingrese sus datos para el registro</p>
+        <form method="POST" enctype = 'multipart/form-data' class="form-inline justify-content-center">
+          {%csrf_token%}
+          {{user_form.as_p}}
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      {%endif%}
+    </div>
+  </div>
+</div>
+
+{%endblock%}

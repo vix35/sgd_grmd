@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+      <div class="container">
+          <ul class='navbar-nav'>
+              <li><a class="navbar-brand" href="{%url 'index'%}">Sistema de Gestion de datos</a> </li>
+              <li><a class="nav-link" href="{% url 'admin:index' %}">Admin</a> </li>
+
+
+              {%if user.is_authenticated%}
+              <li><a class='nav-link' href="{%url 'app_uno:upload_plan_diario'%}">Subir Plan diario</a> </li>
+              <li><a class='nav-link' href="{%url 'app_uno:upload_velocidad_de_quiebre'%}">Subir Velocidad de quiebre</a> </li>
+              <li><a class='nav-link' href="{%url 'logout'%}">Logout</a> </li>
+              {%else%}
+              <li><a class="nav-link" href="{%url 'app_uno:register'%}">Register</a> </li>
+              <li><a class='nav-link'href="{%url 'app_uno:user_login'%}">Login</a> </li>
+              {%endif%}
+
+          </ul>
+      </div>
+    </nav>
+
+    {%block body_block%}
+    {%endblock%}
+
+  </body>
+</html>
