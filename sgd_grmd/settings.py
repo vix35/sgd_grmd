@@ -26,7 +26,7 @@ SECRET_KEY = '9#z84u*k_bf)v6ku66wjc3lh0&&&-mjasv)9km3_i@vi6ca8(='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.40']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'codelco_prueba',
-        'USER': 'django',
-        'PASSWORD': '!38Codelco_prueba_juanito',
+        'USER': 'root',
+        'PASSWORD': 'root',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
