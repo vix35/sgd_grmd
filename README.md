@@ -7,8 +7,10 @@ Pasos para poder Replicar comportamiento en computador local (algunos de estos p
   * para activar el environment: 'activate mydjangoenv'
 2. Instalar las siguientes librerias en el environment:
   * Para los cifrados de las contraseñas de los usuarios: 
-    * 'pip install bcrypt'
-    * 'pip install django[argon2]'
+   * 'pip install bcrypt'
+   * 'pip install django[argon2]'
+  * Para poder usar MySQL como base de datos en Django: [mas documentacion sobre esto](https://data-flair.training/blogs/django-database/)
+   * 'pip install mysqlclient
 3. Instalar todos los servicios de MySQL[MySQL 8.0.23](https://dev.mysql.com/downloads/installer/), [Tutorial] (https://youtu.be/enRpneJLVrU)
   * Conectarse al servidor de la base de datos a travez de MySQL Workbench
   * crear base de datos llamada 'codelco_prueba'
