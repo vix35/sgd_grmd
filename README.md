@@ -1,4 +1,4 @@
-# sgd_grmd
+# Procedimiento para poder probar y seguir desarrollando la aplicacion.
 
 Pasos para poder Replicar comportamiento en computador local (algunos de estos pueden ser hechos antes o despues, pero se recomiendo hacerlos segun se indica.)
 
