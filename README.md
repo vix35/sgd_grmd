@@ -11,7 +11,7 @@ Pasos para poder Replicar comportamiento en computador local (algunos de estos p
    * 'pip install django[argon2]'
   * Para poder usar MySQL como base de datos en Django: [mas documentacion sobre esto](https://data-flair.training/blogs/django-database/)
    * 'pip install mysqlclient
-3. Instalar todos los servicios de MySQL[MySQL 8.0.23](https://dev.mysql.com/downloads/installer/), [Tutorial] (https://youtu.be/enRpneJLVrU)
+3. Instalar todos los servicios de MySQL [MySQL 8.0.23](https://dev.mysql.com/downloads/installer/), [Tutorial](https://youtu.be/enRpneJLVrU)
   * Conectarse al servidor de la base de datos a travez de MySQL Workbench
   * crear base de datos llamada 'codelco_prueba'
 4. Migrar datos desde app a base de datos
