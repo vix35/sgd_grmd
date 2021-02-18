@@ -16,16 +16,14 @@ import io
 
 def is_pd_modified(row,old_data):
     for i in old_data:
-        if (i.sector == row[0] and i.punto == row[1] and i.fecha == row[2] and i.TPD != row[3]):
+        if (i.sector == row[0] and i.punto == row[1] and i.fecha == row[2] and i.TPD != float(row[3])):
             return True
-        else:
-            return False
+    return False
 
 def is_pd_new(row, old_data):
     for i in old_data:
         if (i.sector == row[0] and i.punto == row[1] and i.fecha == row[2]):
             return False
-
     return True
 
 
