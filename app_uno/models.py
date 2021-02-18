@@ -15,6 +15,7 @@ class Velocidad_de_quiebre(models.Model):
     porcentaje_ext_primario = models.FloatField()
 
 class DBF(models.Model):
+    numero = models.IntegerField()
     material = models.CharField(max_length=200)
     unidad = models.CharField(max_length=200)
     valor = models.FloatField(max_length=200, null=True)
